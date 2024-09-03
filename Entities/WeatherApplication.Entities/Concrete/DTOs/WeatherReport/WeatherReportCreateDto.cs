@@ -23,7 +23,7 @@ public class WeatherReportCreateDto
     public DateTime DateTime { get; set; }
     public int DistrictId { get; set; }
 
-    public static WeatherReport ToDistrcit(WeatherReportCreateDto createDto)
+    public static WeatherReport ToWeatherReport(WeatherReportCreateDto createDto)
     {
         WeatherReport weatherReport = new()
         {
