@@ -21,7 +21,7 @@ public class DistrictDto
         districtDtoList.Add(districtDto);
         return districtDtoList;
     }
-    public static District TodiscritDtos(DistrictDto districtDto)
+    public static District ToDiscritDtos(DistrictDto districtDto)
     {
         District district = new District
         {

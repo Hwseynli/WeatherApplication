@@ -17,3 +17,4 @@
 /Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
 /Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Core.pdb
 /Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.sourcelink.json

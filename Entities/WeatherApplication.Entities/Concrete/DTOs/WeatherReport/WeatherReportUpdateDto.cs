@@ -2,7 +2,8 @@
 using WeatherApplication.Entities.Concrete.TableModels;
 
 namespace WeatherApplication.Entities.Concrete.DTOs;
-public class WeatherReportDto
+
+public class WeatherReportUpdateDto
 {
     public int Id { get; set; }
     public int WeatherId { get; set; }
@@ -24,38 +25,35 @@ public class WeatherReportDto
     public DateTime DateTime { get; set; }
     public int DistrictId { get; set; }
 
-    public static List<WeatherReportDto> AtWeatherReportDto(WeatherReport weatherReport)
+    public static WeatherReportUpdateDto ToWeatherReport(WeatherReport weatherReport)
     {
-        WeatherReportDto weatherReportDto = new()
+        WeatherReportUpdateDto weatherReportDto = new()
         {
             Id = weatherReport.Id,
-            WeatherId=weatherReport.WeatherId,
-            Main=weatherReport.Main,
-            Description=weatherReport.Description,
-            Icon=weatherReport.Icon,
-            Temp=weatherReport.Temp,
-            FeelsLike=weatherReport.FeelsLike,
-            TempMin=weatherReport.TempMin,
-            TempMax=weatherReport.TempMax,
-            Pressure=weatherReport.Pressure,
-            Humidity=weatherReport.Humidity,
-            SeaLevel=weatherReport.SeaLevel,
-            GroundLevel=weatherReport.GroundLevel,
-            WindDegree=weatherReport.WindDegree,
-            WindGust=weatherReport.WindGust,
-            Clouds=weatherReport.Clouds,
-            DateTime=weatherReport.DateTime,
-            DistrictId=weatherReport.DistrictId,
-            WindSpeed=weatherReport.WindSpeed
+            WeatherId = weatherReport.WeatherId,
+            Main = weatherReport.Main,
+            Description = weatherReport.Description,
+            Icon = weatherReport.Icon,
+            Temp = weatherReport.Temp,
+            FeelsLike = weatherReport.FeelsLike,
+            TempMin = weatherReport.TempMin,
+            TempMax = weatherReport.TempMax,
+            Pressure = weatherReport.Pressure,
+            Humidity = weatherReport.Humidity,
+            SeaLevel = weatherReport.SeaLevel,
+            GroundLevel = weatherReport.GroundLevel,
+            WindDegree = weatherReport.WindDegree,
+            WindGust = weatherReport.WindGust,
+            Clouds = weatherReport.Clouds,
+            DateTime = weatherReport.DateTime,
+            DistrictId = weatherReport.DistrictId,
+            WindSpeed = weatherReport.WindSpeed
         };
-        List<WeatherReportDto> weatherReportDtos = new List<WeatherReportDto>();
-        weatherReportDtos.Add(weatherReportDto);
-        return weatherReportDtos;
+        return weatherReportDto;
     }
-
-    public static WeatherReport ToDiscritDtos(WeatherReportDto weatherReportDto)
+    public static WeatherReport ToWeatherReport(WeatherReportUpdateDto weatherReportDto)
     {
-        WeatherReport weatherReport = new()
+        WeatherReport report = new()
         {
             Id = weatherReportDto.Id,
             WeatherId = weatherReportDto.WeatherId,
@@ -77,7 +75,7 @@ public class WeatherReportDto
             DistrictId = weatherReportDto.DistrictId,
             WindSpeed = weatherReportDto.WindSpeed
         };
-        return weatherReport;
+        return report;
     }
 }
 

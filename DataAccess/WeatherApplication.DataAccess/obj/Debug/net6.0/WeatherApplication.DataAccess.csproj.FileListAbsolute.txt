@@ -12,3 +12,4 @@
 /Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.pdb
 /Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.genruntimeconfig.cache
 /Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/ref/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.sourcelink.json

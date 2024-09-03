@@ -15,3 +15,4 @@
 /Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.pdb
 /Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
 /Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherA.07FBED04.Up2Date
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.sourcelink.json
