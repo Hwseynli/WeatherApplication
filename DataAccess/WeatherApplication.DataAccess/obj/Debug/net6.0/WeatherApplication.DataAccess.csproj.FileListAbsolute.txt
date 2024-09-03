@@ -1,0 +1,14 @@
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.deps.json
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.runtimeconfig.json
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.AssemblyReference.cache
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfoInputs.cache
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfo.cs
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.CoreCompileInputs.cache
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/refint/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.genruntimeconfig.cache
+/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/ref/WeatherApplication.DataAccess.dll

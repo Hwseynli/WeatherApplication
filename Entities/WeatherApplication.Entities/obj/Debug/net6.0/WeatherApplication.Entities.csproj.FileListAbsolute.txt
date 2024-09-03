@@ -1,0 +1,17 @@
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.deps.json
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.pdb
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfoInputs.cache
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfo.cs
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.CoreCompileInputs.cache
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/refint/WeatherApplication.Entities.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.pdb
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/ref/WeatherApplication.Entities.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.AssemblyReference.cache
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.pdb
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherA.07FBED04.Up2Date
