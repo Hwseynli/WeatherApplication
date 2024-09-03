@@ -53,7 +53,7 @@ public class WeatherReportDto
         return weatherReportDtos;
     }
 
-    public static WeatherReport ToDiscritDtos(WeatherReportDto weatherReportDto)
+    public static WeatherReport ToWeatherReportDtos(WeatherReportDto weatherReportDto)
     {
         WeatherReport weatherReport = new()
         {
