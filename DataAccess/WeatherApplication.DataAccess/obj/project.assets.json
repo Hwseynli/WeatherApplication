@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation/11.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -782,10 +811,78 @@
             "rid": "win"
           }
         }
+      },
+      "WeatherApplication.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "11.9.2",
+          "Microsoft.EntityFrameworkCore": "6.0.32"
+        },
+        "compile": {
+          "bin/placeholder/WeatherApplication.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherApplication.Core.dll": {}
+        }
+      },
+      "WeatherApplication.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "WeatherApplication.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WeatherApplication.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherApplication.Entities.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
+    "FluentValidation/11.9.2": {
+      "sha512": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
+      "type": "package",
+      "path": "fluentvalidation/11.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.9.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2003,6 +2100,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WeatherApplication.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
+      "msbuildProject": "../../Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
+    },
+    "WeatherApplication.Entities/1.0.0": {
+      "type": "project",
+      "path": "../../Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+      "msbuildProject": "../../Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2010,7 +2117,9 @@
       "Microsoft.EntityFrameworkCore >= 6.0.32",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.32",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.32"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.32",
+      "WeatherApplication.Core >= 1.0.0",
+      "WeatherApplication.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2019,11 +2128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
+      "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
       "projectName": "WeatherApplication.DataAccess",
-      "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
+      "projectPath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
       "packagesPath": "/Users/zeyneb/.nuget/packages/",
-      "outputPath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/",
+      "outputPath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -2038,7 +2147,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
+            },
+            "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

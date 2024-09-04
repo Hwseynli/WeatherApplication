@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {}
+    "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {}
   },
   "projects": {
-    "/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {
+    "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj",
+        "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj",
         "projectName": "WeatherApplication.Business",
-        "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj",
+        "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj",
         "packagesPath": "/Users/zeyneb/.nuget/packages/",
-        "outputPath": "/Users/zeyneb/Desktop/WeatherApplication/Business/WeatherApplication.Business/obj/",
+        "outputPath": "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
-                "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
+              "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+                "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
               }
             }
           }
@@ -37,11 +37,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,83 +62,14 @@
         }
       }
     },
-    "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
+    "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
+        "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
         "projectName": "WeatherApplication.Core",
-        "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
+        "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
         "packagesPath": "/Users/zeyneb/.nuget/packages/",
-        "outputPath": "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
-                "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[11.9.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
-        "projectName": "WeatherApplication.DataAccess",
-        "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
-        "packagesPath": "/Users/zeyneb/.nuget/packages/",
-        "outputPath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/",
+        "outputPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -165,28 +91,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.32, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.32, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.32, )"
             },
@@ -217,14 +132,14 @@
         }
       }
     },
-    "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+    "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+        "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
         "projectName": "WeatherApplication.Entities",
-        "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+        "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
         "packagesPath": "/Users/zeyneb/.nuget/packages/",
-        "outputPath": "/Users/zeyneb/Desktop/WeatherApplication/Entities/WeatherApplication.Entities/obj/",
+        "outputPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -240,8 +155,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
-                "projectPath": "/Users/zeyneb/Desktop/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
+              "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
+                "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
               }
             }
           }
@@ -250,11 +165,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cS9dU1L4P58=",
+  "dgSpecHash": "fLXbum8Z3GymlWphPS2JOzuxayVKGQf/6yUKXupoUE2M0859qbqbHb5RP91gCLbQu2YVfvA5pB/uK3nMNSb47g==",
   "success": true,
-  "projectFilePath": "/Users/zeyneb/Desktop/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
+  "projectFilePath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj",
   "expectedPackageFiles": [
+    "/Users/zeyneb/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/zeyneb/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/zeyneb/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/zeyneb/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/zeyneb/.nuget/packages/microsoft.data.sqlclient/2.1.7/microsoft.data.sqlclient.2.1.7.nupkg.sha512",
