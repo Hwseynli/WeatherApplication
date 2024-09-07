@@ -23,6 +23,8 @@ public class WeatherReportDto
     public float Clouds { get; set; }
     public DateTime DateTime { get; set; }
     public int DistrictId { get; set; }
+    public string WeatherDiscritName { get; set; }
+
 
     public static List<WeatherReportDto> AtWeatherReportDto(WeatherReport weatherReport)
     {
@@ -46,7 +48,8 @@ public class WeatherReportDto
             Clouds=weatherReport.Clouds,
             DateTime=weatherReport.DateTime,
             DistrictId=weatherReport.DistrictId,
-            WindSpeed=weatherReport.WindSpeed
+            WindSpeed=weatherReport.WindSpeed,
+
         };
         List<WeatherReportDto> weatherReportDtos = new List<WeatherReportDto>();
         weatherReportDtos.Add(weatherReportDto);

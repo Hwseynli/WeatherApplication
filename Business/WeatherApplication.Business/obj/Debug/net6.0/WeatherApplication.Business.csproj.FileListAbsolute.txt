@@ -36,3 +36,5 @@
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/refint/WeatherApplication.Business.dll
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.pdb
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/ref/WeatherApplication.Business.dll
+/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb

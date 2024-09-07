@@ -2,14 +2,15 @@
 {
     public class SuccessResult:Result
     {
-        public SuccessResult(bool IsSuccess):base(true)
+        public SuccessResult():base(true)
         {
 
         }
-        public SuccessResult(string message,bool IsSuccess):base(message,true)
+        public SuccessResult(string message):base(message,true)
         {
 
         }
+
     }
 }
 
