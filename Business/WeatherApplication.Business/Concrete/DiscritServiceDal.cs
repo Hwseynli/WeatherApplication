@@ -15,12 +15,10 @@ namespace WeatherApplication.Business.Concrete
     public class DiscritServiceDal : IDistrictService
     {
         private readonly AppDbContext _context;
-        private readonly IMapper _mapper;
         private readonly IDistrictDal _districtDal;
-        public DiscritServiceDal(IMapper mapper,AppDbContext context, IDistrictDal districtDal)
+        public DiscritServiceDal(AppDbContext context, IDistrictDal districtDal)
         {
             _context = context;
-            _mapper = mapper;
             _districtDal = districtDal;
         }
 
@@ -49,20 +47,28 @@ namespace WeatherApplication.Business.Concrete
                 {
                     Id = item.Id,
                     Latitude = item.Latitude,
-
+                    Longitude=item.Longitude,
+                    Title=item.Title
                 };
-
+                dtos.Add(districtDto);
             }
+            return new SuccessDataResult<List<DistrictDto>>(dtos);
         }
 
         public IDataResult<District> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var model = _districtDal.GetById(id);
+            return new SuccessDataResult<District>(model);
         }
 
-        public IResult UpdateAsync(DistrictDto district)
+        public IResult UpdateAsync(DistrictUpdateDto district)
         {
-            throw new NotImplementedException();
+            var model = DistrictUpdateDto.ToDistrict(district);
+            var value = GetByIdAsync(district.Id).Data;
+            model.UpdateDate = DateTime.Now;
+            _districtDal.UpdateAsync(model);
+            return new SuccessResult(UIMessage.UPDATE_MESSAGE);
+
         }
     }
 }

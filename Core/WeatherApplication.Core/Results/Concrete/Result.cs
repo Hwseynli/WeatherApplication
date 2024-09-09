@@ -5,9 +5,9 @@ namespace WeatherApplication.Core.Results.Concrete
 {
     public class Result:IResult
     {
-        public Result(bool IsSuccess)
+        public Result(bool isSuccess)
         {
-            IsSuccess = IsSuccess;
+            IsSuccess = isSuccess;
         }
 
         public Result(string message,bool IsSuccess):this(IsSuccess)

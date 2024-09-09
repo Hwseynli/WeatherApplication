@@ -3525,7 +3525,8 @@
       "Swashbuckle.AspNetCore >= 6.5.0",
       "WeatherApplication.Business >= 1.0.0",
       "WeatherApplication.Core >= 1.0.0",
-      "WeatherApplication.DataAccess >= 1.0.0"
+      "WeatherApplication.DataAccess >= 1.0.0",
+      "WeatherApplication.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3562,6 +3563,9 @@
             },
             "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
               "projectPath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj"
+            },
+            "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
             }
           }
         }

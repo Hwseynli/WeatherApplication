@@ -10,57 +10,53 @@ namespace WeatherApplication.Core.DataAccess.Concrete
         where TEntity: BaseEntity, new()
         where TContext: DbContext, new()
     {
-        public async Task AddAsync(TEntity entity)
+        public void AddAsync(TEntity entity)
         {
             using (TContext context =new TContext())
             {
                 var Added = context.Entry(entity);
                 Added.State = EntityState.Added;
-                await context.SaveChangesAsync();
-
+                context.SaveChanges();
+                
             }
         }
-
-        public async Task DeleteAsync(TEntity entity)
+        public void DeleteAsync(TEntity entity)
         {
             using (TContext context = new TContext())
             {
                 var Deleted = context.Entry(entity);
                 Deleted.State = EntityState.Deleted;
-                await context.SaveChangesAsync();
+                context.SaveChangesAsync();
             }
         }
-
-        public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null)
+        public List<TEntity> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null)
         {
             using (TContext context = new TContext())
             {
                 if (filter == null)
                 {
-                    return await context.Set<TEntity>().ToListAsync();
+                    return context.Set<TEntity>().ToList();
                 }
                 else
                 {
-                    return await context.Set<TEntity>().Where(filter).ToListAsync();
+                    return context.Set<TEntity>().Where(filter).ToList();
                 }
             }
         }
-
-        public async Task<TEntity> GetById(int id)
+        public TEntity GetById(int id)
         {
             using (TContext context = new TContext())
             {
-                return await context.Set<TEntity>().FirstOrDefaultAsync(x=>x.Id==id);
+                return context.Set<TEntity>().FirstOrDefault(x=>x.Id==id);
             }
         }
-
-        public async Task UpdateAsync(TEntity entity)
+        public void UpdateAsync(TEntity entity)
         {
             using (TContext context = new TContext())
             {
                 var Update = context.Entry(entity);
                 Update.State = EntityState.Modified;
-                await context.SaveChangesAsync();
+                context.SaveChanges();
             }
         }
     }

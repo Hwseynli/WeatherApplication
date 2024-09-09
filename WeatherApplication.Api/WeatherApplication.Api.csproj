@@ -30,5 +30,8 @@
     <ProjectReference Include="..\Core\WeatherApplication.Core\WeatherApplication.Core.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Entities\WeatherApplication.Entities\WeatherApplication.Entities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

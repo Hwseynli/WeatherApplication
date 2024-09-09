@@ -10,7 +10,7 @@ namespace WeatherApplication.Business.Abstracts
         IDataResult<List<DistrictDto>> GetAllAsync();
         IDataResult<District> GetByIdAsync(int id);
         IResult CreateAsync(DistrictDto district);
-        IResult UpdateAsync(DistrictDto district);
+        IResult UpdateAsync(DistrictUpdateDto district);
         IResult DeleteAsync(int id);
     }
 }

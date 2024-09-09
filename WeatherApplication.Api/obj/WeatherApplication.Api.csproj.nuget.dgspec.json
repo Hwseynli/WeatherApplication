@@ -326,6 +326,9 @@
               },
               "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
                 "projectPath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj"
+              },
+              "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+                "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
               }
             }
           }

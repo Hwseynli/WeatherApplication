@@ -22,9 +22,11 @@
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Business.dll
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Business.pdb
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Core.dll
+/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Entities.dll
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Entities.pdb
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.Core.pdb
+/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.csproj.AssemblyReference.cache
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.GeneratedMSBuildEditorConfig.editorconfig
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.AssemblyInfoInputs.cache
@@ -36,5 +38,3 @@
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/refint/WeatherApplication.Business.dll
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/WeatherApplication.Business.pdb
 /Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/obj/Debug/net6.0/ref/WeatherApplication.Business.dll
-/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
-/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb

@@ -11,7 +11,9 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.32",
           "Swashbuckle.AspNetCore": "6.5.0",
           "WeatherApplication.Business": "1.0.0",
-          "WeatherApplication.DataAccess": "1.0.0"
+          "WeatherApplication.Core": "1.0.0",
+          "WeatherApplication.DataAccess": "1.0.0",
+          "WeatherApplication.Entities": "1.0.0"
         },
         "runtime": {
           "WeatherApplication.Api.dll": {}

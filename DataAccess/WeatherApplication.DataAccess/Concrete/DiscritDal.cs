@@ -7,9 +7,6 @@ using WeatherApplication.DataAccess.Context;
 using WeatherApplication.Entities.Concrete.TableModels;
 
 namespace WeatherApplication.DataAccess.Concrete;
-public class DiscritDal : BaseRepository<District, AppDbContext>, IDistrictDal
+public class DistrictDal : BaseRepository<District, AppDbContext>, IDistrictDal
 {
-    public DiscritDal()
-    {
-    }
 }

@@ -1,49 +1,48 @@
 ﻿<Properties StartupConfiguration="{6417D12D-AB7F-4BAB-99EE-F7549E63F038}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WeatherApplication.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/WeatherApplication.Business/Concrete/DiscritServiceDal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherApplication.Api/Controllers/DiscritsController.cs">
     <Files>
-      <File FileName="WeatherApplication.Api/Controllers/DiscritsController.cs" Line="1" Column="1" />
-      <File FileName="Business/WeatherApplication.Business/Concrete/DiscritServiceDal.cs" Line="56" Column="10" />
-      <File FileName="Entities/WeatherApplication.Entities/Concrete/DTOs/District/DistrictDto.cs" Line="4" Column="14" />
-      <File FileName="Business/WeatherApplication.Business/Abstracts/IDistrictService.cs" Line="1" Column="1" />
+      <File FileName="WeatherApplication.Api/Controllers/DiscritsController.cs" Line="66" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WeatherApplication" expanded="True">
-            <Node name="01.Entities" expanded="True">
-              <Node name="WeatherApplication.Entities" expanded="True">
-                <Node name="Concrete" expanded="True">
-                  <Node name="DTOs" expanded="True">
-                    <Node name="District" expanded="True" />
-                  </Node>
-                  <Node name="TableModels" expanded="True">
-                    <Node name="Models" expanded="True" />
-                  </Node>
+            <Node name="00.Core" expanded="True">
+              <Node name="WeatherApplication.Core" expanded="True">
+                <Node name="DataAccess" expanded="True">
+                  <Node name="Abstract" expanded="True" />
+                  <Node name="Concrete" expanded="True" />
+                </Node>
+                <Node name="Entities" expanded="True">
+                  <Node name="Concrete" expanded="True" />
+                </Node>
+                <Node name="Results" expanded="True">
+                  <Node name="Abstract" expanded="True" />
+                  <Node name="Concrete" expanded="True" />
                 </Node>
               </Node>
             </Node>
             <Node name="03.Business" expanded="True">
               <Node name="WeatherApplication.Business">
                 <Node name="Abstracts" expanded="True" />
-                <Node name="BaseMessages" expanded="True" />
-                <Node name="Concrete" expanded="True">
-                  <Node name="DiscritServiceDal.cs" selected="True" />
-                </Node>
+                <Node name="Concrete" expanded="True" />
               </Node>
             </Node>
             <Node name="WeatherApplication.Api">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers">
+                <Node name="DiscritsController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WeatherApplication.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

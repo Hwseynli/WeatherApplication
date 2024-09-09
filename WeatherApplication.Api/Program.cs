@@ -1,4 +1,7 @@
-﻿using WeatherApplication.Business.Concrete;
+﻿using WeatherApplication.Business.Abstracts;
+using WeatherApplication.Business.Concrete;
+using WeatherApplication.DataAccess.Abstract;
+using WeatherApplication.DataAccess.Concrete;
 using WeatherApplication.DataAccess.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddHostedService<WeatherReportServiceDal>();
+
+builder.Services.AddScoped<IDistrictDal,DistrictDal>();
+builder.Services.AddScoped<IDistrictService, DiscritServiceDal>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
