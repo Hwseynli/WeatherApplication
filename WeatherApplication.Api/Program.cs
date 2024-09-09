@@ -13,7 +13,7 @@ builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddHostedService<WeatherReportServiceDal>();
 
 builder.Services.AddScoped<IDistrictDal,DistrictDal>();
-builder.Services.AddScoped<IDistrictService, DiscritServiceDal>();
+builder.Services.AddScoped<IDistrictService, DistrictServiceDal>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

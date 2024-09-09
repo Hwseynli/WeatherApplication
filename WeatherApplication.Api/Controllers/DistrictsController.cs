@@ -11,11 +11,11 @@ using WeatherApplication.Entities.Concrete.DTOs;
 namespace WeatherApplication.Api.Controllers;
 [ApiController]
 [Route("api/[controller]")]
-public class DiscritsController : ControllerBase
+public class DistrictsController : ControllerBase
 {
     private readonly IDistrictService _districtService;
 
-    public DiscritsController(IDistrictService districtService)
+    public DistrictsController(IDistrictService districtService)
     {
         _districtService = districtService;
     }

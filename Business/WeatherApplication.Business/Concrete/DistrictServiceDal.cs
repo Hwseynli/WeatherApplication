@@ -12,11 +12,11 @@ using WeatherApplication.Entities.Concrete.TableModels;
 
 namespace WeatherApplication.Business.Concrete
 {
-    public class DiscritServiceDal : IDistrictService
+    public class DistrictServiceDal : IDistrictService
     {
         private readonly AppDbContext _context;
         private readonly IDistrictDal _districtDal;
-        public DiscritServiceDal(AppDbContext context, IDistrictDal districtDal)
+        public DistrictServiceDal(AppDbContext context, IDistrictDal districtDal)
         {
             _context = context;
             _districtDal = districtDal;
