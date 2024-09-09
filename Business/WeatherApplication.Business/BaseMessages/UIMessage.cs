@@ -7,7 +7,7 @@ namespace WeatherApplication.Business.BaseMessages
         public const string UPDATE_MESSAGE = "Məlumat Yeniləndi";
         public const string DELETED_MESSAGE = "Məlumat Silindi";
         public const string DELETED_MESSAGES = "Məlumat Birdəfəlik Silindi";
-
+        public const string HARD_DELETED_MESSAGE = "Məlumat Birdəfəlik Silindi";
         public static string GetRequiredMessage(string propName)
         {
             return $"{propName} boş ola bilməz!";

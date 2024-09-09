@@ -29,12 +29,19 @@ namespace WeatherApplication.Business.Concrete
             return new SuccessResult(UIMessage.ADD_MESSAGE);
         }
 
-        public IResult DeleteAsync(int id)
+        public IResult SoftDelete(int id)
         {
             var model = GetByIdAsync(id).Data;
             model.IsDeleted = id;
             _districtDal.UpdateAsync(model);
             return new SuccessResult(UIMessage.DELETED_MESSAGE);
+        }
+
+        public IResult HardDelete(int id)
+        {
+            var model = GetByIdAsync(id).Data;
+            _districtDal.DeleteAsync(model);
+            return new SuccessResult(UIMessage.HARD_DELETED_MESSAGE);
         }
 
         public IDataResult<List<DistrictDto>> GetAllAsync()

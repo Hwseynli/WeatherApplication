@@ -55,13 +55,25 @@ public class DistrictsController : ControllerBase
     }
 
     [HttpDelete]
-    public IActionResult DeleteDistrict(DistrictDto dto)
+    public IActionResult HardDeleteDistrict(int id)
     {
-        var result = _districtService.DeleteAsync(dto.Id);
+        var result = _districtService.HardDelete(id);
         if (result.IsSuccess)
         {
             return Ok(result);
         }
         return BadRequest(result);
     }
+
+    [HttpDelete]
+    public IActionResult SoftDelete(int id)
+    {
+        var result = _districtService.SoftDelete(id);
+        if (result.IsSuccess)
+        {
+            return Ok(result);
+        }
+        return BadRequest(result);
+    }
+
 }

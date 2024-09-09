@@ -11,7 +11,8 @@ namespace WeatherApplication.Business.Abstracts
         IDataResult<District> GetByIdAsync(int id);
         IResult CreateAsync(DistrictDto district);
         IResult UpdateAsync(DistrictUpdateDto district);
-        IResult DeleteAsync(int id);
+        IResult SoftDelete(int id);
+        IResult HardDelete(int id);
     }
 }
 

@@ -1,16 +1,16 @@
 ﻿using System;
 using WeatherApplication.Core.Results.Abstract;
 using WeatherApplication.Entities.Concrete.DTOs;
+using WeatherApplication.Entities.Concrete.TableModels;
 
 namespace WeatherApplication.Business.Abstracts
 {
     public interface IWeatherReportService
     {
-        IDataResult<IEnumerable<WeatherReportDto>> GetAllAsync();
-        IDataResult<WeatherReportDto> GetByIdAsync(int id);
-        IResult CreateAsync(WeatherReportDto weatherReport);
-        IResult UpdateAsync(WeatherReportDto weatherReport);
-        IResult DeleteAsync(int id);
+        IDataResult<List<WeatherReportDto>> GetAllAsync();
+        IDataResult<WeatherReport> GetByIdAsync(int id);
+        IResult SoftDelete(int id);
+        IResult HardDelete(int id);
     }
 }
 
