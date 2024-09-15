@@ -15,9 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="Results\" />
     <Folder Include="Results\Abstract\" />
-    <Folder Include="Results\Concrete\" />
     <Folder Include="Validation\" />
   </ItemGroup>
   <ItemGroup>

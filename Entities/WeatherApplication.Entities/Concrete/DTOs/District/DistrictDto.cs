@@ -1,5 +1,4 @@
-﻿using System;
-using WeatherApplication.Entities.Concrete.TableModels;
+﻿using WeatherApplication.Entities.Concrete.TableModels;
 namespace WeatherApplication.Entities.Concrete.DTOs;
 public class DistrictDto
 {
@@ -25,7 +24,6 @@ public class DistrictDto
     {
         District district = new District
         {
-            Id = districtDto.Id,
             Title = districtDto.Title,
             Latitude = districtDto.Latitude,
             Longitude = districtDto.Longitude

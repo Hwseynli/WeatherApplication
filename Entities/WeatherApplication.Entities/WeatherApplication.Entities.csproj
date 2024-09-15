@@ -7,12 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\" />
-    <Folder Include="Concrete\TableModels\" />
     <Folder Include="Concrete\DTOs\" />
     <Folder Include="Concrete\DTOs\District\" />
     <Folder Include="Concrete\DTOs\WeatherReport\" />
-    <Folder Include="Concrete\TableModels\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Concrete\" />

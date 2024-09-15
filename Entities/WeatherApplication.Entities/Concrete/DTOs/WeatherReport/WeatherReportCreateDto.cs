@@ -1,5 +1,4 @@
-﻿using System;
-using WeatherApplication.Entities.Concrete.TableModels;
+﻿using WeatherApplication.Entities.Concrete.TableModels;
 
 namespace WeatherApplication.Entities.Concrete.DTOs;
 public class WeatherReportCreateDto

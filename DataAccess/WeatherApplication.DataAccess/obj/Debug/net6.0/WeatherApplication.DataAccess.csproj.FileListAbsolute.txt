@@ -33,3 +33,43 @@
 /Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.pdb
 /Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.genruntimeconfig.cache
 /Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/ref/WeatherApplication.DataAccess.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.deps.json
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.runtimeconfig.json
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Core.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Entities.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Core.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Entities.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.AssemblyReference.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfoInputs.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfo.cs
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.CoreCompileInputs.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.sourcelink.json
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.CopyComplete
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/refint/WeatherApplication.DataAccess.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.genruntimeconfig.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/ref/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.deps.json
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.runtimeconfig.json
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Core.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Entities.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Core.pdb
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/bin/Debug/net6.0/WeatherApplication.Entities.pdb
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.AssemblyReference.cache
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfoInputs.cache
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.AssemblyInfo.cs
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.csproj.CoreCompileInputs.cache
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.sourcelink.json
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherA.9B22DAB9.Up2Date
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/refint/WeatherApplication.DataAccess.dll
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.pdb
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/WeatherApplication.DataAccess.genruntimeconfig.cache
+/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/obj/Debug/net6.0/ref/WeatherApplication.DataAccess.dll

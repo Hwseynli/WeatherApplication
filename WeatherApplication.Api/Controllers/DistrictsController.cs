@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using WeatherApplication.Business.Abstracts;
 using WeatherApplication.Entities.Concrete.DTOs;
 
@@ -23,7 +19,7 @@ public class DistrictsController : ControllerBase
     [HttpGet]
     public IActionResult GetDistrict()
     {
-        var result = _districtService.GetAllAsync();
+        var result = _districtService.GetAll();
         if (result.IsSuccess)
         {
             return Ok(result);
@@ -34,7 +30,7 @@ public class DistrictsController : ControllerBase
     [HttpPost]
     public IActionResult CreateDistrict(DistrictDto districtDto)
     {
-        var result = _districtService.CreateAsync(districtDto);
+        var result = _districtService.Create(districtDto);
         if (result.IsSuccess)
         {
             return Ok(result);
@@ -46,7 +42,7 @@ public class DistrictsController : ControllerBase
     public IActionResult UpdateDistrict(DistrictUpdateDto updateDto)
     {
 
-        var result = _districtService.UpdateAsync(updateDto);
+        var result = _districtService.Update(updateDto);
         if (result.IsSuccess)
         {
             return Ok(result);
@@ -54,7 +50,7 @@ public class DistrictsController : ControllerBase
         return BadRequest(result);
     }
 
-    [HttpDelete]
+    [HttpDelete("HardDelete")]
     public IActionResult HardDeleteDistrict(int id)
     {
         var result = _districtService.HardDelete(id);
@@ -65,7 +61,7 @@ public class DistrictsController : ControllerBase
         return BadRequest(result);
     }
 
-    [HttpDelete]
+    [HttpDelete("SoftDelete")]
     public IActionResult SoftDelete(int id)
     {
         var result = _districtService.SoftDelete(id);
@@ -75,5 +71,6 @@ public class DistrictsController : ControllerBase
         }
         return BadRequest(result);
     }
+   
 
 }

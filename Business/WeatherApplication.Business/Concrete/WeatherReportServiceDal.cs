@@ -6,72 +6,46 @@ using WeatherApplication.DataAccess.Abstract;
 using WeatherApplication.Entities.Concrete.DTOs;
 using WeatherApplication.Entities.Concrete.TableModels;
 
-namespace WeatherApplication.Business.Concrete
+namespace WeatherApplication.Business.Concrete;
+public class WeatherReportServiceDal : IWeatherReportService
 {
-    public class WeatherReportServiceDal : IWeatherReportService
+    private readonly IWeatherReportDal _weatherReportDal;
+    public WeatherReportServiceDal(IWeatherReportDal weatherReportDal)
     {
-        private readonly IWeatherReportDal _weatherReportDal;
-        public WeatherReportServiceDal(IWeatherReportDal weatherReportDal)
-        {
-            _weatherReportDal = weatherReportDal;
-        }
+        _weatherReportDal = weatherReportDal;
+    }
 
-        public IResult SoftDelete(int id)
-        {
-            var model = GetByIdAsync(id).Data;
-            model.IsDeleted = id;
-            _weatherReportDal.UpdateAsync(model);
-            return new SuccessResult(UIMessage.DELETED_MESSAGE);
-        }
+    public IResult SoftDelete(int id)
+    {
+        var model = GetById(id).Data;
+        model.IsDeleted = id;
+        _weatherReportDal.Update(model);
+        return new SuccessResult(UIMessage.DELETED_MESSAGE);
+    }
 
-        public IResult HardDelete(int id)
+    public IResult HardDelete(int id)
+    {
+        var model = GetById(id).Data;
+        if (model != null)
         {
-            var model = GetByIdAsync(id).Data;
-            _weatherReportDal.DeleteAsync(model);
+            _weatherReportDal.Delete(model);
             return new SuccessResult(UIMessage.HARD_DELETED_MESSAGE);
         }
-
-        public IDataResult<List<WeatherReportDto>> GetAllAsync()
+        else
         {
-            var result = _weatherReportDal.GetAllAsync(x => x.IsDeleted == 0);
-            List<WeatherReportDto> dtos = new List<WeatherReportDto>();
-            foreach (var item in result)
-            {
-                WeatherReportDto dto = new WeatherReportDto()
-                {
-                    Id = item.Id,
-                    WeatherId = item.WeatherId,
-                    Clouds = item.Clouds,
-                    FeelsLike = item.FeelsLike,
-                    DateTime = item.DateTime,
-                    Description = item.Description,
-                    GroundLevel = item.GroundLevel,
-                    Humidity = item.Humidity,
-                    DistrictId = item.DistrictId,
-                    Icon = item.Icon,
-                    Main = item.Main,
-                    Pressure = item.Pressure,
-                    SeaLevel = item.SeaLevel,
-                    WindDegree = item.WindDegree,
-                    Temp = item.Temp,
-                    TempMax = item.TempMax,
-                    TempMin = item.TempMin,
-                    WindGust = item.WindGust,
-                    WindSpeed = item.WindSpeed,
-                    WeatherDiscritName = item.District.Title,
-                };
-                dtos.Add(dto);
-            }
-            return new SuccessDataResult<List<WeatherReportDto>>(dtos);
+            return new SuccessResult(UIMessage.NOT_DELETED_MESSAGE);
         }
+    }
 
-        public IDataResult<WeatherReport> GetByIdAsync(int id)
-        {
-            var result = _weatherReportDal.GetById(id);
-            return new SuccessDataResult<WeatherReport>(result);
-        }
+    public IDataResult<List<WeatherReportDto>> GetAll()
+    {
+        return new SuccessDataResult<List<WeatherReportDto>>(_weatherReportDal.GetWeatherReport());
+    }
 
-
+    public IDataResult<WeatherReport> GetById(int id)
+    {
+        var result = _weatherReportDal.GetById(id);
+        return new SuccessDataResult<WeatherReport>(result);
     }
 }
 

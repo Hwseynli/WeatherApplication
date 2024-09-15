@@ -674,11 +674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+      "projectUniqueName": "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
       "projectName": "WeatherApplication.Entities",
-      "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+      "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
       "packagesPath": "/Users/zeyneb/.nuget/packages/",
-      "outputPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/obj/",
+      "outputPath": "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -694,8 +694,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
-              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
+            "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
+              "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
             }
           }
         }

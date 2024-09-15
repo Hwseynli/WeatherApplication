@@ -11,10 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddHostedService<WeatherReportBackgroundService>();
-builder.Services.AddScoped<IWeatherReportService, WeatherReportServiceDal>();
-builder.Services.AddScoped<IWeatherReportDal, WeatherReportDal>();
+builder.Services.AddHostedService<WeatherReportXmlBackgroundService>();
 builder.Services.AddScoped<IDistrictDal,DistrictDal>();
+builder.Services.AddScoped<IWeatherReportDal, WeatherReportDal>();
 builder.Services.AddScoped<IDistrictService, DistrictServiceDal>();
+builder.Services.AddScoped<IWeatherReportService, WeatherReportServiceDal>();
+builder.Services.AddScoped<IWeatherReportXmlService, WeatherReportXmlService>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -32,3 +32,35 @@
 /Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/refint/WeatherApplication.Entities.dll
 /Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.pdb
 /Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/ref/WeatherApplication.Entities.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.deps.json
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.AssemblyReference.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfoInputs.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfo.cs
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.CoreCompileInputs.cache
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.sourcelink.json
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.CopyComplete
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/refint/WeatherApplication.Entities.dll
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.pdb
+C:/Users/Admın/Desktop/Yeni klasör/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/ref/WeatherApplication.Entities.dll
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.deps.json
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.dll
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Entities.pdb
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.dll
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/bin/Debug/net6.0/WeatherApplication.Core.pdb
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.AssemblyReference.cache
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfoInputs.cache
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.AssemblyInfo.cs
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.csproj.CoreCompileInputs.cache
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.sourcelink.json
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherA.07FBED04.Up2Date
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.dll
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/refint/WeatherApplication.Entities.dll
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/WeatherApplication.Entities.pdb
+/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/obj/Debug/net6.0/ref/WeatherApplication.Entities.dll

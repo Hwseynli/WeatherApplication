@@ -54,6 +54,87 @@ namespace WeatherApplication.DataAccess.Migrations
                     b.ToTable("Districts");
                 });
 
+            modelBuilder.Entity("WeatherApplication.Entities.Concrete.TableModels.ModelXml.WeatherReportXml", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<float>("Clouds")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DistrictId")
+                        .HasColumnType("int");
+
+                    b.Property<float>("FeelsLike")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GroundLevel")
+                        .HasColumnType("real");
+
+                    b.Property<float>("Humidity")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IsDeleted")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Main")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Pressure")
+                        .HasColumnType("real");
+
+                    b.Property<float>("SeaLevel")
+                        .HasColumnType("real");
+
+                    b.Property<float>("Temp")
+                        .HasColumnType("real");
+
+                    b.Property<float>("TempMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("TempMin")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("WeatherId")
+                        .HasColumnType("int");
+
+                    b.Property<float>("WindDegree")
+                        .HasColumnType("real");
+
+                    b.Property<float>("WindGust")
+                        .HasColumnType("real");
+
+                    b.Property<float>("WindSpeed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("XmlData")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("DistrictId");
+
+                    b.ToTable("WeatherReportXmls");
+                });
+
             modelBuilder.Entity("WeatherApplication.Entities.Concrete.TableModels.WeatherReport", b =>
                 {
                     b.Property<int>("Id")
@@ -135,13 +216,26 @@ namespace WeatherApplication.DataAccess.Migrations
                     b.ToTable("WeatherReports");
                 });
 
+            modelBuilder.Entity("WeatherApplication.Entities.Concrete.TableModels.ModelXml.WeatherReportXml", b =>
+                {
+                    b.HasOne("WeatherApplication.Entities.Concrete.TableModels.District", "District")
+                        .WithMany()
+                        .HasForeignKey("DistrictId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("District");
+                });
+
             modelBuilder.Entity("WeatherApplication.Entities.Concrete.TableModels.WeatherReport", b =>
                 {
-                    b.HasOne("WeatherApplication.Entities.Concrete.TableModels.District", null)
+                    b.HasOne("WeatherApplication.Entities.Concrete.TableModels.District", "District")
                         .WithMany("WeatherReports")
                         .HasForeignKey("DistrictId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("District");
                 });
 
             modelBuilder.Entity("WeatherApplication.Entities.Concrete.TableModels.District", b =>
