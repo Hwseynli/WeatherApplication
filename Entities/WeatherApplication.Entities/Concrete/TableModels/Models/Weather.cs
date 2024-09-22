@@ -1,9 +1,12 @@
-﻿namespace WeatherApplication.Entities.Concrete.TableModels.Models;
-public class Weather
+﻿using System;
+namespace WeatherApplication.Entities.Concrete.TableModels.Models
 {
-    public int Id { get; set; }
-    public string Main { get; set; }
-    public string Description { get; set; }
-    public string Icon { get; set; }
+    public class Weather
+    {
+        public int Id { get; set; }
+        public string Main { get; set; }
+        public string Description { get; set; }
+        public string Icon { get; set; }
+    }
 }
 

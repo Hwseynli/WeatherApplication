@@ -1,5 +1,6 @@
-﻿using System.Xml.Serialization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Text;
+using System.Xml.Serialization;
 using WeatherApplication.Business.Abstracts;
 using WeatherApplication.Entities.Concrete.TableModels.ModelXml;
 
@@ -16,20 +17,10 @@ namespace WeatherApplication.Api.Controllers
             _weatherReportXmlService = weatherReportXmlService;
         }
 
-        //[HttpGet]
-        //public IActionResult GetAll()
-        //{
-        //    var result = _weatherReportXmlService.GetAllWeatherReports();
-        //    if (result.IsSuccess)
-        //    {
-        //        return Ok(result);
-        //    }
-        //    return BadRequest(result);
-        //}
         [HttpGet("all")]
-        public IActionResult GetAllWeatherReports()
+        public async Task<IActionResult> GetAllWeatherReportsAsync()
         {
-            var result =  _weatherReportXmlService.GetAllWeatherReports();
+            var result =  _weatherReportXmlService.GetAllWeatherReportsAsync();
             if (result.IsSuccess)
             {
                 var xmlSerializer = new XmlSerializer(typeof(List<WeatherReportXml>));
@@ -42,9 +33,9 @@ namespace WeatherApplication.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetWeatherReportById(int id)
+        public async Task<IActionResult> GetWeatherReportByIdAsync(int id)
         {
-            var result = _weatherReportXmlService.GetWeatherReportById(id);
+            var result = _weatherReportXmlService.GetWeatherReportByIdAsync(id);
             if (result.IsSuccess)
             {
                 var xmlSerializer = new XmlSerializer(typeof(WeatherReportXml));
@@ -78,5 +69,28 @@ namespace WeatherApplication.Api.Controllers
             return BadRequest(result);
         }
 
+        [HttpGet("download-xml")]
+        public IActionResult DownloadXml()
+        {
+            var weatherDataResult = _weatherReportXmlService.GetAllWeatherReportsAsync(); // Veriyi çekiyoruz
+
+            if (weatherDataResult.IsSuccess) // Sonuç başarılı mı kontrol ediyoruz
+            {
+                var weatherData = weatherDataResult.Data; // Asıl veriyi alıyoruz
+
+                var xmlSerializer = new XmlSerializer(typeof(List<WeatherReportXml>));
+                using (var stringWriter = new StringWriter())
+                {
+                    xmlSerializer.Serialize(stringWriter, weatherData);
+                    var xmlString = stringWriter.ToString();
+                    var byteArray = Encoding.UTF8.GetBytes(xmlString);
+                    return File(byteArray, "application/xml", "weather_data.xml");
+                }
+            }
+            else
+            {
+                return BadRequest("Veri getirilemedi.");
+            }
+        }
     }
 }

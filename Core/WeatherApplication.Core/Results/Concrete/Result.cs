@@ -1,20 +1,23 @@
-﻿using WeatherApplication.Core.Results.Abstract;
+﻿using System;
+using WeatherApplication.Core.Results.Abstract;
 
-namespace WeatherApplication.Core.Results.Concrete;
-public class Result:IResult
+namespace WeatherApplication.Core.Results.Concrete
 {
-    public Result(bool isSuccess)
+    public class Result:IResult
     {
-        IsSuccess = isSuccess;
+        public Result(bool isSuccess)
+        {
+            IsSuccess = isSuccess;
+        }
+
+        public Result(string message,bool IsSuccess):this(IsSuccess)
+        {
+            Message = message;
+        }
+
+        public string Message { get; }
+
+        public bool IsSuccess { get; }
     }
-
-    public Result(string message,bool IsSuccess):this(IsSuccess)
-    {
-        Message = message;
-    }
-
-    public string Message { get; }
-
-    public bool IsSuccess { get; }
 }
 

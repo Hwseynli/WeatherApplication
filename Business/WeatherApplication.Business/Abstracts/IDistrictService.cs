@@ -1,15 +1,18 @@
-﻿using WeatherApplication.Core.Results.Abstract;
+﻿using System;
+using WeatherApplication.Core.Results.Abstract;
 using WeatherApplication.Entities.Concrete.DTOs;
 using WeatherApplication.Entities.Concrete.TableModels;
 
-namespace WeatherApplication.Business.Abstracts;
-public interface IDistrictService
+namespace WeatherApplication.Business.Abstracts
 {
-    IDataResult<List<DistrictDto>> GetAll();
-    IDataResult<District> GetById(int id);
-    IResult Create(DistrictDto district);
-    IResult Update(DistrictUpdateDto district);
-    IResult SoftDelete(int id);
-    IResult HardDelete(int id);
+    public interface IDistrictService
+    {
+        IDataResult<List<DistrictDto>> GetAllAsync();
+        IDataResult<District> GetByIdAsync(int id);
+        IResult CreateAsync(DistrictDto district);
+        IResult UpdateAsync(DistrictUpdateDto district);
+        IResult SoftDelete(int id);
+        IResult HardDelete(int id);
+    }
 }
 

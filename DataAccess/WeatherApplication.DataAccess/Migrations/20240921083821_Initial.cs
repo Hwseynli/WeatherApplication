@@ -73,9 +73,9 @@ namespace WeatherApplication.DataAccess.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     WeatherId = table.Column<int>(type: "int", nullable: false),
-                    Main = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Icon = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Main = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Icon = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Temp = table.Column<float>(type: "real", nullable: false),
                     FeelsLike = table.Column<float>(type: "real", nullable: false),
                     TempMin = table.Column<float>(type: "real", nullable: false),
@@ -91,7 +91,8 @@ namespace WeatherApplication.DataAccess.Migrations
                     DateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DistrictId = table.Column<int>(type: "int", nullable: false),
                     IsDeleted = table.Column<int>(type: "int", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    XmlData = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

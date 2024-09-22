@@ -1,9 +1,19 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace WeatherApplication.Entities.Concrete.TableModels.ModelXml
 {
     public class DistrictXml
     {
+        public DistrictXml()
+        {
+            WeatherReports = new List<WeatherReportXml>();
+        }
+
         [XmlElement("Id")]
         public int Id { get; set; }
 
@@ -19,10 +29,5 @@ namespace WeatherApplication.Entities.Concrete.TableModels.ModelXml
         [XmlArray("WeatherReports")]
         [XmlArrayItem("WeatherReport")]
         public List<WeatherReportXml> WeatherReports { get; set; }
-
-        public DistrictXml()
-        {
-            WeatherReports = new List<WeatherReportXml>();
-        }
     }
 }

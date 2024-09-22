@@ -12,8 +12,8 @@ using WeatherApplication.DataAccess.Context;
 namespace WeatherApplication.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240914113837_Initialsa")]
-    partial class Initialsa
+    [Migration("20240921083821_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -86,14 +86,12 @@ namespace WeatherApplication.DataAccess.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("Icon")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IsDeleted")
                         .HasColumnType("int");
 
                     b.Property<string>("Main")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Pressure")

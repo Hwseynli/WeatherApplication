@@ -1,31 +1,18 @@
 ﻿<Properties StartupConfiguration="{6417D12D-AB7F-4BAB-99EE-F7549E63F038}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataAccess/WeatherApplication.DataAccess/Context/AppDbContext.cs">
-    <Files>
-      <File FileName="WeatherApplication.Api/Program.cs" Line="40" Column="1" />
-      <File FileName="DataAccess/WeatherApplication.DataAccess/Context/AppDbContext.cs" Line="29" Column="47" />
-    </Files>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WeatherApplication.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="WeatherApplication" expanded="True">
-            <Node name="02.DataAccess" expanded="True">
-              <Node name="WeatherApplication.DataAccess">
-                <Node name="Context" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="WeatherApplication.Api" expanded="True" />
-          </Node>
+          <Node name="WeatherApplication" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WeatherApplication.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
 </Properties>

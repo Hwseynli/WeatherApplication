@@ -1,24 +1,31 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace WeatherApplication.Core.XmlHelpers;
-public class XmlHelper
+namespace WeatherApplication.Core.XmlHelpers
 {
-    public static string SerializeToXml<T>(T obj)
+    public class XmlHelper
     {
-        var serializer = new XmlSerializer(typeof(T));
-        using (var stringWriter = new StringWriter())
+        public static string SerializeToXml<T>(T obj)
         {
-            serializer.Serialize(stringWriter, obj);
-            return stringWriter.ToString();
+            var serializer = new XmlSerializer(typeof(T));
+            using (var stringWriter = new StringWriter())
+            {
+                serializer.Serialize(stringWriter, obj);
+                return stringWriter.ToString();
+            }
         }
-    }
 
-    public static T DeserializeFromXml<T>(string xml)
-    {
-        var serializer = new XmlSerializer(typeof(T));
-        using (var stringReader = new StringReader(xml))
+        public static T DeserializeFromXml<T>(string xml)
         {
-            return (T)serializer.Deserialize(stringReader);
+            var serializer = new XmlSerializer(typeof(T));
+            using (var stringReader = new StringReader(xml))
+            {
+                return (T)serializer.Deserialize(stringReader);
+            }
         }
     }
 }

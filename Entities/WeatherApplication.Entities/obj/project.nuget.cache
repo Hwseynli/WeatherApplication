@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aQ0/I+Vw6TqfmgAQaCe4/8Yu3f2478dvn47Y6YLx7KkzRyWp4rIhrqlWkMj7Yux1uL2RNx2at+EafhtmxFBniQ==",
+  "dgSpecHash": "F0yWrY7aQBwc7I6XgnefPcY5bCl434SCcORrP52THXWr90fsFRrQeeVcao+YRRCAcdR3zREBzncpmXuaQoN2aw==",
   "success": true,
-  "projectFilePath": "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
+  "projectFilePath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj",
   "expectedPackageFiles": [
     "/Users/zeyneb/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/zeyneb/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",

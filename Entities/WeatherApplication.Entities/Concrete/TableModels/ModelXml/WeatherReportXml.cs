@@ -1,5 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace WeatherApplication.Entities.Concrete.TableModels.ModelXml
@@ -10,21 +15,21 @@ namespace WeatherApplication.Entities.Concrete.TableModels.ModelXml
         [Key]
         [XmlElement("Id")]
         public int ID { get; set; }
-
+        
         [XmlElement("WeatherId")]
         public int WeatherId { get; set; }
 
         [XmlElement("Main")]
-        public string Main { get; set; }
+        public string? Main { get; set; }
 
         [XmlElement("Description")]
         public string? Description { get; set; }
 
         [XmlElement("Icon")]
-        public string Icon { get; set; }
+        public string? Icon { get; set; }
 
         [XmlElement("Temp")]
-        public float Temp { get; set; }
+        public float Temp { get; set; } 
 
         [XmlElement("FeelsLike")]
         public float FeelsLike { get; set; }
@@ -66,16 +71,16 @@ namespace WeatherApplication.Entities.Concrete.TableModels.ModelXml
         public int DistrictId { get; set; }
 
         [XmlElement("IsDeleted")]
-        public int IsDeleted { get; set; } = 0;
+        public int IsDeleted { get; set; }=0;
 
         [XmlElement("UpdateDate")]
-        public DateTime? UpdateDate { get; set; }
+        public DateTime ?UpdateDate { get; set; }
 
         [Column(TypeName = "nvarchar(max)")]
         public string XmlData { get; set; }
 
         [XmlIgnore]
-        public District? District { get; set; }
-
+        public District District { get; set; }
+       
     }
 }

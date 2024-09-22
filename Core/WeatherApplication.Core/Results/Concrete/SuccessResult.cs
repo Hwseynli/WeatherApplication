@@ -1,14 +1,16 @@
-﻿namespace WeatherApplication.Core.Results.Concrete;
-public class SuccessResult:Result
+﻿namespace WeatherApplication.Core.Results.Concrete
 {
-    public SuccessResult():base(true)
+    public class SuccessResult:Result
     {
+        public SuccessResult():base(true)
+        {
+
+        }
+        public SuccessResult(string message):base(message,true)
+        {
+
+        }
 
     }
-    public SuccessResult(string message):base(message,true)
-    {
-
-    }
-
 }
 

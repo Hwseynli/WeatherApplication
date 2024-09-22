@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WeatherApplication.Business.Abstracts;
 
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace WeatherApplication.Api.Controllers
 {
     [ApiController]
@@ -15,7 +17,7 @@ namespace WeatherApplication.Api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var result = _weatherReportService.GetAll();
+            var result = _weatherReportService.GetAllAsync();
             if (result.IsSuccess)
             {
                 return Ok(result);
@@ -25,7 +27,7 @@ namespace WeatherApplication.Api.Controllers
         [HttpGet("id")]
         public IActionResult GetById(int id)
         {
-            var result = _weatherReportService.GetById(id);
+            var result = _weatherReportService.GetByIdAsync(id);
             if (result.IsSuccess)
             {
                 return Ok(result);

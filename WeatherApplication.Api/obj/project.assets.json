@@ -3535,11 +3535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zeyneb/Downloads/WeatherApplication/WeatherApplication.Api/WeatherApplication.Api.csproj",
+      "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/WeatherApplication.Api/WeatherApplication.Api.csproj",
       "projectName": "WeatherApplication.Api",
-      "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/WeatherApplication.Api/WeatherApplication.Api.csproj",
+      "projectPath": "/Users/zeyneb/Projects/WeatherApplication/WeatherApplication.Api/WeatherApplication.Api.csproj",
       "packagesPath": "/Users/zeyneb/.nuget/packages/",
-      "outputPath": "/Users/zeyneb/Downloads/WeatherApplication/WeatherApplication.Api/obj/",
+      "outputPath": "/Users/zeyneb/Projects/WeatherApplication/WeatherApplication.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -3555,17 +3555,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/zeyneb/Downloads/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {
-              "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj"
+            "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Business/WeatherApplication.Business/WeatherApplication.Business.csproj"
             },
-            "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
-              "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
+            "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj"
             },
-            "/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
-              "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj"
+            "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/DataAccess/WeatherApplication.DataAccess/WeatherApplication.DataAccess.csproj"
             },
-            "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
-              "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
+            "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj": {
+              "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Entities/WeatherApplication.Entities/WeatherApplication.Entities.csproj"
             }
           }
         }

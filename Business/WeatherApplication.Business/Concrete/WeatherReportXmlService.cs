@@ -1,59 +1,62 @@
-﻿using WeatherApplication.Business.Abstracts;
+﻿using Microsoft.Extensions.Logging;
+using WeatherApplication.Business.Abstracts;
 using WeatherApplication.Core.Results.Abstract;
 using WeatherApplication.Core.Results.Concrete;
 using WeatherApplication.DataAccess.Context;
 using WeatherApplication.Entities.Concrete.TableModels.ModelXml;
 
-namespace WeatherApplication.Business.Concrete;
-public class WeatherReportXmlService : IWeatherReportXmlService
+namespace WeatherApplication.Business.Concrete
 {
-    private readonly AppDbContext _context;
-    //private readonly ILogger<WeatherReportXmlService> _logger;
-
-    public WeatherReportXmlService(AppDbContext context)//, ILogger<WeatherReportXmlService> logger)
+    public class WeatherReportXmlService : IWeatherReportXmlService
     {
-        _context = context;
-       // _logger = logger;
-    }
+        private readonly AppDbContext _context;
+        private readonly ILogger<WeatherReportXmlService> _logger;
 
-    public IDataResult<List<WeatherReportXml>> GetAllWeatherReports()
-    {
-        var reports = _context.WeatherReportXmls.ToList();
-        return new SuccessDataResult<List<WeatherReportXml>>(reports);
-    }
-
-    public IDataResult<WeatherReportXml> GetWeatherReportById(int id)
-    {
-        var report = _context.WeatherReportXmls.Find(id);
-        if (report != null)
+        public WeatherReportXmlService(AppDbContext context, ILogger<WeatherReportXmlService> logger)
         {
-            return new SuccessDataResult<WeatherReportXml>(report);
+            _context = context;
+            _logger = logger;
         }
-        return new ErrorDataResult<WeatherReportXml>(default, "Report not found", false);
-    }
 
-    public IResult HardDeleteWeatherReport(int id)
-    {
-        var report = _context.WeatherReportXmls.Find(id);
-        if (report != null)
+        public IDataResult<List<WeatherReportXml>> GetAllWeatherReportsAsync()
         {
-            _context.WeatherReportXmls.Remove(report);
-            _context.SaveChanges();
-            return new SuccessResult("Report soft deleted successfully.");
+            var reports = _context.WeatherReportXmls.ToList();
+            return new SuccessDataResult<List<WeatherReportXml>>(reports);
         }
-        return new ErrorResult("Report not found.");
-    }
 
-    public IResult SoftDeleteWeatherReport(int id)
-    {
-        var report = _context.WeatherReportXmls.Find(id);
-        if (report != null)
+        public IDataResult<WeatherReportXml> GetWeatherReportByIdAsync(int id)
         {
-            report.IsDeleted = id;
-            _context.WeatherReportXmls.Update(report);
-            _context.SaveChanges();
-            return new SuccessResult("Report soft deleted successfully.");
+            var report = _context.WeatherReportXmls.Find(id);
+            if (report != null)
+            {
+                return new SuccessDataResult<WeatherReportXml>(report);
+            }
+            return new ErrorDataResult<WeatherReportXml>(default, "Report not found", false);
         }
-        return new ErrorResult("Report not found.");
+
+        public IResult HardDeleteWeatherReport(int id)
+        {
+            var report = _context.WeatherReportXmls.Find(id);
+            if (report != null)
+            {
+                _context.WeatherReportXmls.Remove(report);
+                _context.SaveChanges();
+                return new SuccessResult("Report soft deleted successfully.");
+            }
+            return new ErrorResult("Report not found.");
+        }
+
+        public IResult SoftDeleteWeatherReport(int id)
+        {
+            var report = _context.WeatherReportXmls.Find(id);
+            if (report != null)
+            {
+                report.IsDeleted = id;
+                _context.WeatherReportXmls.Update(report);
+                _context.SaveChanges();
+                return new SuccessResult("Report soft deleted successfully.");
+            }
+            return new ErrorResult("Report not found.");
+        }
     }
 }

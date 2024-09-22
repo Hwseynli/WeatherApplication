@@ -792,11 +792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
+      "projectUniqueName": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
       "projectName": "WeatherApplication.Core",
-      "projectPath": "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
+      "projectPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/WeatherApplication.Core.csproj",
       "packagesPath": "/Users/zeyneb/.nuget/packages/",
-      "outputPath": "/Users/zeyneb/Downloads/WeatherApplication/Core/WeatherApplication.Core/obj/",
+      "outputPath": "/Users/zeyneb/Projects/WeatherApplication/Core/WeatherApplication.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/zeyneb/.nuget/NuGet/NuGet.Config"
@@ -818,11 +818,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

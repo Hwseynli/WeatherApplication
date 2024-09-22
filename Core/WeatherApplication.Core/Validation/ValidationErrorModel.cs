@@ -1,7 +1,10 @@
-﻿namespace WeatherApplication.Core.Validation;
-public class ValidationErrorModel
+﻿using System;
+namespace WeatherApplication.Core.Validation
 {
-    public string ErrorMessage { get; set; }
-    public string ErrorCode { get; set; }
+    public class ValidationErrorModel
+    {
+        public string ErrorMessage { get; set; }
+        public string ErrorCode { get; set; }
+    }
 }
 
