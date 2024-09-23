@@ -1,12 +1,8 @@
-﻿using System;
-using WeatherApplication.Core.DataAccess.Abstract;
+﻿using WeatherApplication.Core.DataAccess.Abstract;
 using WeatherApplication.Entities.Concrete.TableModels;
 
-namespace WeatherApplication.DataAccess.Abstract
+namespace WeatherApplication.DataAccess.Abstract;
+public interface IXmlFileDal:IBaseInterface<XmlFile>
 {
-    public interface IXmlFileDal:IBaseInterface<XmlFile>
-    {
-        
-    }
 }
 

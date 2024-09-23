@@ -6,52 +6,46 @@ using WeatherApplication.DataAccess.Abstract;
 using WeatherApplication.Entities.Concrete.DTOs;
 using WeatherApplication.Entities.Concrete.TableModels;
 
-namespace WeatherApplication.Business.Concrete
+namespace WeatherApplication.Business.Concrete;
+public class WeatherReportServiceDal : IWeatherReportService
 {
-    public class WeatherReportServiceDal : IWeatherReportService
+    private readonly IWeatherReportDal _weatherReportDal;
+    public WeatherReportServiceDal(IWeatherReportDal weatherReportDal)
     {
-        private readonly IWeatherReportDal _weatherReportDal;
-        public WeatherReportServiceDal(IWeatherReportDal weatherReportDal)
+        _weatherReportDal = weatherReportDal;
+    }
+
+    public IResult SoftDelete(int id)
+    {
+        var model = GetByIdAsync(id).Data;
+        model.IsDeleted = id;
+        _weatherReportDal.UpdateAsync(model);
+        return new SuccessResult(UIMessage.DELETED_MESSAGE);
+    }
+
+    public IResult HardDelete(int id)
+    {
+        var model = GetByIdAsync(id).Data;
+        if (model != null)
         {
-            _weatherReportDal = weatherReportDal;
+            _weatherReportDal.DeleteAsync(model);
+            return new SuccessResult(UIMessage.HARD_DELETED_MESSAGE);
         }
-
-        public IResult SoftDelete(int id)
+        else
         {
-            var model = GetByIdAsync(id).Data;
-            model.IsDeleted = id;
-            _weatherReportDal.UpdateAsync(model);
-            return new SuccessResult(UIMessage.DELETED_MESSAGE);
+            return new SuccessResult(UIMessage.NOT_DELETED_MESSAGE);
         }
+    }
 
-        public IResult HardDelete(int id)
-        {
-            var model = GetByIdAsync(id).Data;
-            if (model != null)
-            {
-                _weatherReportDal.DeleteAsync(model);
-                return new SuccessResult(UIMessage.HARD_DELETED_MESSAGE);
-            }
-            else
-            {
-                return new SuccessResult(UIMessage.NOT_DELETED_MESSAGE);
-            }
-            
-            
-        }
+    public IDataResult<List<WeatherReportDto>> GetAllAsync()
+    {
+        return new SuccessDataResult<List<WeatherReportDto>>(_weatherReportDal.GetWeatherReport());
+    }
 
-        public IDataResult<List<WeatherReportDto>> GetAllAsync()
-        {
-            return new SuccessDataResult<List<WeatherReportDto>>(_weatherReportDal.GetWeatherReport());
-        }
-
-        public IDataResult<WeatherReport> GetByIdAsync(int id)
-        {
-            var result = _weatherReportDal.GetById(id);
-            return new SuccessDataResult<WeatherReport>(result);
-        }
-
-
+    public IDataResult<WeatherReport> GetByIdAsync(int id)
+    {
+        var result = _weatherReportDal.GetById(id);
+        return new SuccessDataResult<WeatherReport>(result);
     }
 }
 

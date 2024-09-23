@@ -5,9 +5,6 @@ using WeatherApplication.Entities.Concrete.TableModels.ModelXml;
 namespace WeatherApplication.DataAccess.Context;
 public class AppDbContext : DbContext
 {
-    //public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-    //{
-    //}
     public DbSet<District> Districts { get; set; }
     public DbSet<WeatherReport> WeatherReports { get; set; }
     public DbSet<WeatherReportXml> WeatherReportXmls { get; set; }

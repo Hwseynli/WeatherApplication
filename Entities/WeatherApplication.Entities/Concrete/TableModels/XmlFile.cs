@@ -1,11 +1,8 @@
-﻿using System;
-using WeatherApplication.Core.Entities.Concrete;
+﻿using WeatherApplication.Core.Entities.Concrete;
 
-namespace WeatherApplication.Entities.Concrete.TableModels
+namespace WeatherApplication.Entities.Concrete.TableModels;
+public class XmlFile:BaseEntity
 {
-    public class XmlFile:BaseEntity
-    {
-        public string Content { get; set; }
-    }
+    public string Content { get; set; }
 }
 

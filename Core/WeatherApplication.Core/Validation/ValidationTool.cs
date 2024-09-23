@@ -1,28 +1,25 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace WeatherApplication.Core.Validation
+namespace WeatherApplication.Core.Validation;
+public static class ValidationTool
 {
-    public static class ValidationTool
+    public static bool Validate(IValidator validator,object entity,out List<ValidationErrorModel> errors)
     {
-        public static bool Validate(IValidator validator,object entity,out List<ValidationErrorModel> errors)
+        errors = Enumerable.Empty<ValidationErrorModel>().ToList();
+        ValidationErrorModel model = null;
+        var context = new ValidationContext<object>(entity);
+        var result = validator.Validate(context);
+        if (!result.IsValid)
         {
-            errors = Enumerable.Empty<ValidationErrorModel>().ToList();
-            ValidationErrorModel model = null;
-            var context = new ValidationContext<object>(entity);
-            var result = validator.Validate(context);
-            if (!result.IsValid)
+            foreach (var item in result.Errors)
             {
-                foreach (var item in result.Errors)
-                {
-                    model = new ValidationErrorModel();
-                    model.ErrorMessage = item.ErrorMessage;
-                    model.ErrorCode = item.ErrorCode;
-                    errors.Add(model);
-                }
+                model = new ValidationErrorModel();
+                model.ErrorMessage = item.ErrorMessage;
+                model.ErrorCode = item.ErrorCode;
+                errors.Add(model);
             }
-            return result.IsValid;
         }
+        return result.IsValid;
     }
 }
 

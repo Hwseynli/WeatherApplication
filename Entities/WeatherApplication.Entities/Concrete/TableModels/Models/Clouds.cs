@@ -1,9 +1,6 @@
-﻿using System;
-namespace WeatherApplication.Entities.Concrete.TableModels.Models
+﻿namespace WeatherApplication.Entities.Concrete.TableModels.Models;
+public class Clouds
 {
-    public class Clouds
-    {
-        public int All { get; set; }
-    }
+    public int All { get; set; }
 }
 

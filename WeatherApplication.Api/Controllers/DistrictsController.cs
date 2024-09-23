@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using WeatherApplication.Business.Abstracts;
-using WeatherApplication.Core.Results.Abstract;
-using WeatherApplication.Core.Results.Concrete;
 using WeatherApplication.Entities.Concrete.DTOs;
-using WeatherApplication.Entities.Concrete.TableModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -78,6 +71,4 @@ public class DistrictsController : ControllerBase
         }
         return BadRequest(result);
     }
-   
-
 }

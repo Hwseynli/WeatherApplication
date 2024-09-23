@@ -5,58 +5,54 @@ using WeatherApplication.Core.Results.Concrete;
 using WeatherApplication.DataAccess.Context;
 using WeatherApplication.Entities.Concrete.TableModels.ModelXml;
 
-namespace WeatherApplication.Business.Concrete
+namespace WeatherApplication.Business.Concrete;
+public class WeatherReportXmlService : IWeatherReportXmlService
 {
-    public class WeatherReportXmlService : IWeatherReportXmlService
+    private readonly AppDbContext _context;
+
+    public WeatherReportXmlService(AppDbContext context)
     {
-        private readonly AppDbContext _context;
-        private readonly ILogger<WeatherReportXmlService> _logger;
+        _context = context;
+    }
 
-        public WeatherReportXmlService(AppDbContext context, ILogger<WeatherReportXmlService> logger)
-        {
-            _context = context;
-            _logger = logger;
-        }
+    public IDataResult<List<WeatherReportXml>> GetAllWeatherReportsAsync()
+    {
+        var reports = _context.WeatherReportXmls.ToList();
+        return new SuccessDataResult<List<WeatherReportXml>>(reports);
+    }
 
-        public IDataResult<List<WeatherReportXml>> GetAllWeatherReportsAsync()
+    public IDataResult<WeatherReportXml> GetWeatherReportByIdAsync(int id)
+    {
+        var report = _context.WeatherReportXmls.Find(id);
+        if (report != null)
         {
-            var reports = _context.WeatherReportXmls.ToList();
-            return new SuccessDataResult<List<WeatherReportXml>>(reports);
+            return new SuccessDataResult<WeatherReportXml>(report);
         }
+        return new ErrorDataResult<WeatherReportXml>(default, "Report not found", false);
+    }
 
-        public IDataResult<WeatherReportXml> GetWeatherReportByIdAsync(int id)
+    public IResult HardDeleteWeatherReport(int id)
+    {
+        var report = _context.WeatherReportXmls.Find(id);
+        if (report != null)
         {
-            var report = _context.WeatherReportXmls.Find(id);
-            if (report != null)
-            {
-                return new SuccessDataResult<WeatherReportXml>(report);
-            }
-            return new ErrorDataResult<WeatherReportXml>(default, "Report not found", false);
+            _context.WeatherReportXmls.Remove(report);
+            _context.SaveChanges();
+            return new SuccessResult("Report soft deleted successfully.");
         }
+        return new ErrorResult("Report not found.");
+    }
 
-        public IResult HardDeleteWeatherReport(int id)
+    public IResult SoftDeleteWeatherReport(int id)
+    {
+        var report = _context.WeatherReportXmls.Find(id);
+        if (report != null)
         {
-            var report = _context.WeatherReportXmls.Find(id);
-            if (report != null)
-            {
-                _context.WeatherReportXmls.Remove(report);
-                _context.SaveChanges();
-                return new SuccessResult("Report soft deleted successfully.");
-            }
-            return new ErrorResult("Report not found.");
+            report.IsDeleted = id;
+            _context.WeatherReportXmls.Update(report);
+            _context.SaveChanges();
+            return new SuccessResult("Report soft deleted successfully.");
         }
-
-        public IResult SoftDeleteWeatherReport(int id)
-        {
-            var report = _context.WeatherReportXmls.Find(id);
-            if (report != null)
-            {
-                report.IsDeleted = id;
-                _context.WeatherReportXmls.Update(report);
-                _context.SaveChanges();
-                return new SuccessResult("Report soft deleted successfully.");
-            }
-            return new ErrorResult("Report not found.");
-        }
+        return new ErrorResult("Report not found.");
     }
 }
