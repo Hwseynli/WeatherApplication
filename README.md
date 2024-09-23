@@ -1,6 +1,6 @@
 <h1 id="title">🌦️ WeatherApplication</h1>
 
-<p id="description">    WeatherApplication is a .NET 6 project designed to collect store and display weather data using an n-tier architecture. It integrates key technologies such as MSSQL FluentValidation and N-tier Architecture and provides features like XML-based weather reports and email notifications.</p>
+<p id="description">    WeatherApplication is a .NET 6 project designed to collect store and display weather data using an n-tier architecture. It integrates key technologies such as MSSQL FluentValidation and N-tier Architecture and provides features like XML-based weather reports.</p>
   
 <h2>🧐 Features</h2>
 
@@ -8,11 +8,9 @@ Here're some of the project's best features:
 
 *   🌍 Weather Data Collection via API
 *   📝 Generate Weather Reports in XML Format
-*   ✉️ Send Notifications via Email
 *   ✅ Data Validation using FluentValidation
 *   🏗️ Modular N-tier Architecture
 *   🗄️ MSSQL Database Integration
-
 
 <h2>📂 Project Structure</h2>
 
